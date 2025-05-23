@@ -228,6 +228,43 @@ p {
     justify-content: center;
     position: relative;
     overflow: hidden; /* For background animations */
+    flex-direction: column; /* Stack content vertically on small devices */
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 120px 20px 100px; /* Reduce padding on smaller devices */
+        min-height: auto; /* Allow height to adjust */
+    }
+    .hero-container {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-image {
+        max-width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    }
+    .hero-text {
+        padding-left: 0;
+        max-width: 100%;
+    }
+    .hero-text h1 {
+        font-size: 1.8em;
+    }
+    .hero-text h2 {
+        font-size: 1.2em;
+    }
+    .hero-ctas {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .btn-secondary {
+        margin-left: 0;
+    }
 }
 
 .hero-container {
