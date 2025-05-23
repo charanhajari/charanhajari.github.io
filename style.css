@@ -241,6 +241,8 @@ p {
         gap: 40px;
         align-items: center;
         text-align: center;
+        border-top: 2px solid var(--color-yellow);
+        padding-top: 20px;
     }
     .hero-image {
         max-width: 250px;
